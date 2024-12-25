@@ -70,8 +70,8 @@ class EscapeRoomApp(tk.Tk):
 
         # 이미지 표시
         try:
-            image = Image.open("image.png")
-            image = image.resize((300, 300), Image.ANTIALIAS)  # 이미지 크기 조정
+            image = Image.open("문제.png")
+            image = image.resize((300, 300), Image.LANCZOS)  # 이미지 크기 조정
             self.photo = ImageTk.PhotoImage(image)
             image_label = tk.Label(self.current_frame, image=self.photo, bg="#FFFACD")
             image_label.pack(pady=20)
